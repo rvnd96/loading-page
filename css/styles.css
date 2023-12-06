@@ -89,19 +89,6 @@
     padding-right: 15px;
   }
 }
-section {
-  padding: 100px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3em;
-  width: 100%;
-  height: 100vh;
-  background: #55c45b;
-}
-section:nth-child(odd) {
-  background: #f1aae2;
-}
 h1,
 h2,
 h3,
@@ -112,82 +99,12 @@ p {
   margin: 0;
   padding: 0;
 }
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-.background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #ffffff;
-  overflow: hidden;
-  z-index: -1;
-}
-.background span {
-  width: 36vmin;
-  height: 36vmin;
-  border-radius: 36vmin;
-  backface-visibility: hidden;
-  position: absolute;
-  animation: move;
-  animation-duration: 45;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.background span:nth-child(0) {
-  color: #3c3c728a;
-  top: 22%;
-  left: 78%;
-  animation-duration: 31s;
-  animation-delay: -30s;
-  transform-origin: -6vw -19vh;
-  box-shadow: -72vmin 0 9.03697685vmin currentColor;
-}
-.background span:nth-child(1) {
-  color: #ffaa006e;
-  top: 21%;
-  left: 68%;
-  animation-duration: 30s;
-  animation-delay: -22s;
-  transform-origin: 20vw 25vh;
-  box-shadow: 72vmin 0 9.12183929vmin currentColor;
-}
-.background span:nth-child(2) {
-  color: #3c3c728a;
-  top: 14%;
-  left: 5%;
-  animation-duration: 39s;
-  animation-delay: -45s;
-  transform-origin: 24vw 21vh;
-  box-shadow: -72vmin 0 9.81383786vmin currentColor;
-}
-.background span:nth-child(3) {
-  color: #ffaa006e;
-  top: 55%;
-  left: 18%;
-  animation-duration: 26s;
-  animation-delay: -8s;
-  transform-origin: 6vw 19vh;
-  box-shadow: -72vmin 0 9.73018789vmin currentColor;
-}
-.background span:nth-child(4) {
-  color: #3c3c728a;
-  top: 5%;
-  left: 43%;
-  animation-duration: 24s;
-  animation-delay: -44s;
-  transform-origin: 8vw -1vh;
-  box-shadow: 72vmin 0 9.85449494vmin currentColor;
-}
 .footer {
   -webkit-box-shadow: 0px -8px 15px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px -8px 15px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px -8px 15px 0px rgba(0, 0, 0, 0.1);
   padding: 64px 0;
+  background: #f0f8fb;
 }
 .footer h5,
 .footer p {
@@ -240,6 +157,235 @@ p {
   flex-direction: row;
   grid-gap: 6px;
   flex-wrap: wrap;
+}
+.footer .items .item .contact-details i {
+  color: #0d0d1a;
+}
+#topBtn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: #3c3c72;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s ease-in;
+  box-shadow: 2px 2px 7px 1px #3c3c7263;
+}
+#topBtn:hover {
+  background: #363666;
+}
+#topBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+div#carouselExampleCaptions {
+  padding-top: 114px;
+  height: 85vh;
+  height: 85svh;
+}
+@media only screen and (max-width: 1279.9px) {
+  div#carouselExampleCaptions {
+    height: 60vh;
+    height: 60svh;
+  }
+}
+@media only screen and (max-width: 767.9px) {
+  div#carouselExampleCaptions {
+    height: 40vh;
+    height: 40svh;
+  }
+}
+div#carouselExampleCaptions .carousel-indicators {
+  z-index: 3;
+}
+div#carouselExampleCaptions .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+div#carouselExampleCaptions .carousel-indicators button.active {
+  background-color: #FFAA00;
+  opacity: 1;
+}
+div#carouselExampleCaptions .carousel-inner {
+  height: 100%;
+  position: relative;
+}
+div#carouselExampleCaptions .carousel-inner .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+div#carouselExampleCaptions .carousel-inner .c-item {
+  height: 100%;
+}
+div#carouselExampleCaptions .carousel-inner .c-item img {
+  height: 100%;
+  object-fit: cover;
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption {
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  right: unset;
+  bottom: unset;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption h5 {
+  font-size: 64px;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1279.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption h5 {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 767.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption h5 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 549.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption h5 {
+    font-size: 16px;
+  }
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption p {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 1279.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 549.9px) {
+  div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption p {
+    font-size: 12px;
+  }
+}
+div#carouselExampleCaptions .carousel-controls {
+  z-index: 3;
+  top: 114px;
+}
+.contact-banner {
+  padding: 48px 0;
+  background: #dbf5ed;
+  background: linear-gradient(0deg, #dbf5ed 0%, #ffffff 100%);
+}
+.contact-banner .wrapper {
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+}
+@media screen and (max-width: 767.9px) {
+  .contact-banner .wrapper {
+    flex-direction: column;
+    grid-gap: 32px;
+  }
+}
+.contact-banner .wrapper .welcomeSection {
+  flex-basis: 60%;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-banner .wrapper .welcomeSection h2 {
+  font-size: 28px;
+  color: #0d0d1a;
+}
+.contact-banner .wrapper .welcomeSection h3 {
+  font-size: 42px;
+  color: #FFAA00;
+  margin-bottom: 12px;
+}
+.contact-banner .wrapper .welcomeSection h3 span {
+  color: #3C3C72;
+}
+.contact-banner .wrapper .welcomeSection p {
+  color: #0d0d1a;
+}
+.contact-banner .wrapper .contactSection {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-banner .wrapper .contactSection p {
+  width: fit-content;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+}
+@media only screen and (max-width: 549.9px) {
+  .contact-banner .wrapper .contactSection p {
+    width: 100%;
+  }
+}
+.contact-banner .wrapper .contactSection p a {
+  font-size: 22px;
+  padding: 16px 12px;
+  text-decoration: none;
+  color: white;
+  background: #3C3C72;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 1px 1px 3px #0000007d;
+  text-align: center;
+}
+@media only screen and (max-width: 549.9px) {
+  .contact-banner .wrapper .contactSection p a {
+    width: 100%;
+    padding: 12px 8px;
+  }
+}
+.contact-banner .wrapper .contactSection p a:hover {
+  background: #232344;
+}
+.contact-banner .wrapper .contactSection p i {
+  font-size: 28px;
+}
+.contact-banner .wrapper .contactSection p i.fa-whatsapp {
+  color: #25d366;
+}
+.contact-banner .wrapper .contactSection p i.fa-facebook {
+  color: #1877F2;
+}
+.contact-banner .wrapper .contactSection #serifFont {
+  font-family: 'Poppins', sans-serif;
+}
+.contact-banner .wrapper .contactSection #fb a {
+  background: whitesmoke;
+  box-shadow: 1px 1px 3px #0000007d;
+  color: #0d0d1a;
+  text-align: center;
+}
+@media only screen and (max-width: 549.9px) {
+  .contact-banner .wrapper .contactSection #fb a {
+    width: 100%;
+  }
+}
+.contact-banner .wrapper .contactSection #fb a:hover {
+  background: #dbf5ed;
 }
 .navbar {
   padding-top: 0.75rem;
@@ -313,6 +459,10 @@ p {
   position: relative;
   transition: 0.5s ease-in-out;
 }
+.navbar-toggler + .navbar-collapse .navbar-nav {
+  padding: 25px 0;
+  text-align: center;
+}
 .navbar-toggler span {
   margin: 0;
   padding: 0;
@@ -332,6 +482,9 @@ p {
 .navbar-toggler .toggler-icon.middle-bar {
   margin-top: 0;
   width: 80%;
+}
+.navbar-toggler.collapsed + .navbar-collapse .navbar-nav {
+  padding: 0;
 }
 .navbar-toggler.collapsed .toggler-icon {
   background: #3C3C72;

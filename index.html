@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Home | Ultra Tech Solutions</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -49,91 +56,92 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="container-fluid main-section">
-        <!-- <div class="carousel-wrapper" id="home">
-            <div class="content-wrapper">
-                <h1 class="main-heading">Discover Your Future</h1>
-                <p class="main-paragraph"><span id="with">With</span> Ultra Tech Smart Solutions</p>
-                <a class="btn btn-lg btn-secondary learn-more-btn" href="#services">Learn more</a>
+    <!-- main -->
+    <main id="home">
+        <!-- hero -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/slide-4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="images/slide-4.jpg" class="d-block w-100" alt="slide 1">
+                    <div class="carousel-caption d-md-block">
+                        <h5>the foremost provider</h5>
+                        <p>of electrical and solar water pumping solutions in Sri Lanka.</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item c-item">
+                    <img src="images/slide-3.png" class="d-block w-100" alt="slide 2">
+                    <div class="carousel-caption d-md-block">
+                        <h5>robust and high-performing solution </h5>
+                        <p>for agricultural pumping needs.</p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/slide-2.jpg" class="d-block w-100" alt="slide 3">
+                    <div class="carousel-caption d-md-block">
+                        <h5>seasoned cadre of experts</h5>
+                        <p>with a wealth of experience in the field.</p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/slide-1.jpg" class="d-block w-100" alt="slide 4">
+                    <div class="carousel-caption d-md-block">
+                        <h5>pinnacle of innovation and excellence</h5>
+                        <p>in irrigation technology.</p>
+                    </div>
+                </div>
+                <div class="dark-overlay"></div>
             </div>
-        </div> -->
-        <div class="background">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <button class="carousel-control-prev carousel-controls" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-controls" type="button"
+                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
+    </main>
 
-    <div style="padding: 150px 0; text-align: center; color: rgb(19, 139, 123); text-transform: uppercase; font-size: 1em;">
-        <h1 style="font-size: 3em;">Website is under dev...</h1>
-        <br>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 100 68">
-                <g id="large" transform="rotate(339.751 31 37)">
-                    <path fill="none" stroke="#F44"
-                        d="M55.8 38.5l6.2-1.2c0-1.8-.1-3.5-.4-5.3l-6.3-.2c-.5-2-1.2-4-2.1-6l4.8-4c-.9-1.6-1.9-3-3-4.4l-5.6 3c-1.3-1.6-3-3-4.7-4.1l2-6A30 30 0 0 0 42 8l-3.3 5.4c-2-.7-4.2-1-6.2-1.2L31.3 6c-1.8 0-3.5.1-5.3.4l-.2 6.3c-2 .5-4 1.2-6 2.1l-4-4.8c-1.6.9-3 1.9-4.4 3l3 5.6c-1.6 1.3-3 3-4.1 4.7l-6-2A32.5 32.5 0 0 0 2 26l5.4 3.3c-.7 2-1 4.2-1.2 6.2L0 36.7c0 1.8.1 3.5.4 5.3l6.3.2c.5 2 1.2 4 2.1 6l-4.8 4c.9 1.6 1.9 3 3 4.4l5.6-3c1.4 1.6 3 3 4.7 4.1l-2 6A30.5 30.5 0 0 0 20 66l3.4-5.4c2 .7 4 1 6.1 1.2l1.2 6.2c1.8 0 3.5-.1 5.3-.4l.2-6.3c2-.5 4-1.2 6-2.1l4 4.8c1.6-.9 3-1.9 4.4-3l-3-5.6c1.6-1.3 3-3 4.1-4.7l6 2A32 32 0 0 0 60 48l-5.4-3.3c.7-2 1-4.2 1.2-6.2zm-13.5 4a12.5 12.5 0 1 1-22.6-11 12.5 12.5 0 0 1 22.6 11z">
-                    </path>
-                    <animateTransform attributeName="transform" begin="0s" dur="3s" from="0 31 37" repeatCount="indefinite"
-                        to="360 31 37" type="rotate"></animateTransform>
-                </g>
-                <g id="small" transform="rotate(-149.627 78 21)">
-                    <path fill="none" stroke="#F44"
-                        d="M93 19.3l6-3c-.4-1.6-1-3.2-1.7-4.8L90.8 13c-.9-1.4-2-2.7-3.4-3.8l2.1-6.3A21.8 21.8 0 0 0 85 .7l-3.6 5.5c-1.7-.4-3.4-.5-5.1-.3l-3-5.9c-1.6.4-3.2 1-4.7 1.7L70 8c-1.5 1-2.8 2-3.9 3.5L60 9.4a20.6 20.6 0 0 0-2.2 4.6l5.5 3.6a15 15 0 0 0-.3 5.1l-5.9 3c.4 1.6 1 3.2 1.7 4.7L65 29c1 1.5 2.1 2.8 3.5 3.9l-2.1 6.3a21 21 0 0 0 4.5 2.2l3.6-5.6c1.7.4 3.5.5 5.2.3l2.9 5.9c1.6-.4 3.2-1 4.8-1.7L86 34c1.4-1 2.7-2.1 3.8-3.5l6.3 2.1a21.5 21.5 0 0 0 2.2-4.5l-5.6-3.6c.4-1.7.5-3.5.3-5.1zM84.5 24a7 7 0 1 1-12.8-6.2 7 7 0 0 1 12.8 6.2z">
-                    </path>
-                    <animateTransform attributeName="transform" begin="0s" dur="2s" from="0 78 21" repeatCount="indefinite"
-                        to="-360 78 21" type="rotate"></animateTransform>
-                </g>
-            </svg>
+    <!-- contact banner -->
+    <section class="contact-banner">
+        <div class="container">
+            <div class="wrapper">
+                <div class="welcomeSection">
+                    <h2>Welcome to</h2>
+                    <h3>Ultra Tech  <span>Smart Solutions (pvt) Ltd</span></h3>
+                    <p>Ultra Tech Smart Solutions is a cutting-edge company specializing in comprehensive water
+                        management and sustainable energy solutions. With expertise in water pumping services, we ensure
+                        efficient and reliable water supply systems. Our commitment extends to solar pump services,
+                        harnessing the power of the sun to provide eco-friendly and cost-effective pumping solutions.
+                    </p>
+                </div>
+                <div class="contactSection">
+                     <p>
+                        <a href="https://wa.me/94766066895?text=Hello,%20I%20want%20a%20quotation%20for%20a%20Solar%20Pump" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> 07 66 0 66 895
+                        </a>
+                     </p>
+                     <p id="fb">
+                        <a href="https://www.facebook.com/profile.php?id=61553777147431&mibextid=kFxxJD" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                     </p>
+                </div>
+            </div>
         </div>
-        
-    </div>
-
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -147,13 +155,13 @@
                             class="footer-main-img">
                         <div class="contact-details">
                             <p class="mb-0">
-                                <i class="fas fa-home"></i> **************
+                                <i class="fas fa-home"></i> 75, Halgasthota, Katunayake
                             </p>
                             <p class="m-0 mt-2 ">
-                                <i class="fas fa-envelope"></i> <a href="mailto:ultratechsolutionpvt@gmail.com">Email</a>
+                                <i class="fas fa-envelope"></i> ultratechsolutionpvt@gmail.com
                             </p>
                             <p class="m-0 mt-2 ">
-                                <i class="fas fa-phone"></i> *************
+                                <i class="fas fa-phone"></i> 076 606 6895 | 076 606 7595
                             </p>
                         </div>
                     </div>
@@ -188,23 +196,23 @@
                         </h5>
                         <div class="mt-3">
                             <p class="mb-0">
-                                <a class="p-0 fw-normal text-capitalize text-decoration-none" href="#home">Solar</a>
+                                <a class="p-0 fw-normal text-capitalize text-decoration-none" href="#">Solar</a>
                             </p>
                             <p class="m-0 mt-2 ">
                                 <a class="p-0 fw-normal text-capitalize text-decoration-none"
-                                    href="#about">Submersible</a>
+                                    href="#">Submersible</a>
                             </p>
                             <p class="m-0 mt-2 ">
-                                <a class="p-0  fw-normal text-capitalize text-decoration-none" href="#services">Motor
+                                <a class="p-0  fw-normal text-capitalize text-decoration-none" href="#">Motor
                                     Control Panel</a>
                             </p>
                             <p class="m-0 mt-2 ">
                                 <a class="p-0  fw-normal text-capitalize text-decoration-none"
-                                    href="#products">Surface</a>
+                                    href="#">Surface</a>
                             </p>
                             <p class="m-0 mt-2 ">
                                 <a class="p-0  fw-normal text-capitalize text-decoration-none"
-                                    href="#contact">Accessories</a>
+                                    href="#">Accessories</a>
                             </p>
                         </div>
                     </div>
@@ -214,6 +222,8 @@
             </div>
         </div>
     </footer>
+
+    <button id="topBtn"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

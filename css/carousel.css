@@ -1,0 +1,52 @@
+div#carouselExampleCaptions {
+  padding-top: 114px;
+  height: 85vh;
+  height: 85svh;
+}
+@media only screen and (max-width: 1279.9px) {
+  div#carouselExampleCaptions {
+    height: 60vh;
+    height: 60svh;
+  }
+}
+@media only screen and (max-width: 767.9px) {
+  div#carouselExampleCaptions {
+    height: 40vh;
+    height: 40svh;
+  }
+}
+div#carouselExampleCaptions .carousel-inner {
+  height: 100%;
+  position: relative;
+}
+div#carouselExampleCaptions .carousel-inner .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+div#carouselExampleCaptions .carousel-inner .c-item {
+  height: 100%;
+}
+div#carouselExampleCaptions .carousel-inner .c-item img {
+  height: 100%;
+  object-fit: cover;
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption {
+  z-index: 3;
+  bottom: 50%;
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption h5 {
+  font-size: 64px;
+  text-transform: capitalize;
+}
+div#carouselExampleCaptions .carousel-inner .c-item .carousel-caption p {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+div#carouselExampleCaptions .carousel-controls {
+  z-index: 3;
+}

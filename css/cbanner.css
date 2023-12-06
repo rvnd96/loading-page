@@ -1,0 +1,14 @@
+.contact-banner {
+  padding: 48px 0;
+}
+.contact-banner .wrapper {
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+}
+.contact-banner .wrapper .welcomeSection {
+  flex-basis: 60%;
+}
+.contact-banner .wrapper .contactSection {
+  flex-basis: 40%;
+}
