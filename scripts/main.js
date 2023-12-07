@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    // let sections = document.querySelectorAll('section');
-    // let navLinks = document.querySelectorAll('header nav a');
     window.onscroll = () => {
         scrollFunction();
         buttonScrollFunc();
@@ -17,6 +15,8 @@ $(document).ready(function () {
             $('.navbar').removeClass('navbar-dropshadow');
         }
     }
+
+    // go to btn
     const gotoTopBtn = $('#topBtn');
     const buttonScrollFunc = () => {
         if (
@@ -37,6 +37,7 @@ $(document).ready(function () {
 
     gotoTopBtn.click(topBtnClick)
 
+
 });
 
 //ripples 
@@ -46,7 +47,26 @@ $(document).ready(function () {
 //     perturbance: 0.04,
 // })
 
-// go to btn
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+const observerBtn = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('showBtn')
+        } else {
+            entry.target.classList.remove('showBtn')
+        }
+    })
+})
 
-
-
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el => observer.observe(el)))
+const hiddenElementsBtn = document.querySelectorAll('.hiddenBtn')
+hiddenElementsBtn.forEach((el => observerBtn.observe(el)))
