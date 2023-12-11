@@ -1,0 +1,12 @@
+.products {
+  padding: 96px 0;
+}
+.products .container .products-main-title {
+  background: #3C3C72;
+  background: -webkit-linear-gradient(to bottom right, #3C3C72 58%, #FFAA00 100%);
+  background: -moz-linear-gradient(to bottom right, #3C3C72 58%, #FFAA00 100%);
+  background: linear-gradient(to bottom right, #3C3C72 58%, #FFAA00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 44px;
+}

@@ -16,6 +16,7 @@
   font-size: 18px;
   transition: 0.3s ease-in;
   box-shadow: 2px 2px 7px 1px #3c3c7263;
+  border: 1px solid lavenderblush;
 }
 #topBtn:hover {
   background: #363666;

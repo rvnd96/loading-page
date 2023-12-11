@@ -124,3 +124,18 @@ p {
 .btn:last-child {
   transition-delay: 300ms;
 }
+.product-wrapper:nth-child(2) {
+  transition-delay: 100ms;
+}
+.product-wrapper:nth-child(3) {
+  transition-delay: 200ms;
+}
+.product-wrapper:nth-child(4) {
+  transition-delay: 300ms;
+}
+.product-wrapper:nth-child(5) {
+  transition-delay: 400ms;
+}
+.product-wrapper:nth-child(6) {
+  transition-delay: 500ms;
+}

@@ -29,7 +29,7 @@ $(document).ready(function () {
         }
     }
 
-    
+
     const topBtnClick = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -40,29 +40,33 @@ $(document).ready(function () {
 
 });
 
-//ripples 
-// $('.content-wrapper').ripples({
-//     resolution: 512,
-//     dropRadius: 20,
-//     perturbance: 0.04,
-// })
+// ripples 
+$('#products').ripples({
+    resolution: 800,
+    dropRadius: 20,
+    perturbance: 0.02,
+    interactive: true,
+    crossOrigin: ''
+});
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('show')
-        } else {
-            entry.target.classList.remove('show')
         }
+        // else {
+        //     entry.target.classList.remove('show')
+        // }
     })
 })
 const observerBtn = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('showBtn')
-        } else {
-            entry.target.classList.remove('showBtn')
         }
+        // else {
+        //     entry.target.classList.remove('showBtn')
+        // }
     })
 })
 
@@ -70,3 +74,35 @@ const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el => observer.observe(el)))
 const hiddenElementsBtn = document.querySelectorAll('.hiddenBtn')
 hiddenElementsBtn.forEach((el => observerBtn.observe(el)))
+
+
+// // code fragment
+var data = {
+    service_id: 'service_wi7fq3q',
+    template_id: 'template_utg7hwg',
+    user_id: 'EFN0FJA8S54lsD9h1'
+};
+
+// send email with emailjs
+const user_id = 'EFN0FJA8S54lsD9h1';
+const template_id = 'template_utg7hwg';
+const service_id = 'service_wi7fq3q';
+
+(function () {
+    emailjs.init(user_id);
+})();
+
+$("#contactForm").submit(function (event) {
+    event.preventDefault();
+
+    var formData = $(this).serialize();
+
+    emailjs.sendForm(service_id, template_id, this)
+        .then(function () {
+            alert('Thank you for your message!')
+        }, function (error) {
+            alert('Error! ', error)
+        });
+    $(this)[0].reset();
+
+});
