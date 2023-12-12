@@ -54,9 +54,9 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
         }
-        // else {
-        //     entry.target.classList.remove('show')
-        // }
+        else {
+            entry.target.classList.remove('show')
+        }
     })
 })
 const observerBtn = new IntersectionObserver((entries) => {
@@ -64,9 +64,9 @@ const observerBtn = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('showBtn')
         }
-        // else {
-        //     entry.target.classList.remove('showBtn')
-        // }
+        else {
+            entry.target.classList.remove('showBtn')
+        }
     })
 })
 
