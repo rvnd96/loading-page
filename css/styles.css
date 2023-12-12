@@ -514,13 +514,8 @@ div#carouselExampleCaptions .carousel-controls {
 }
 .products .container .product-items-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
-}
-@media only screen and (max-width: 1023.9px) {
-  .products .container .product-items-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 @media only screen and (max-width: 549.9px) {
   .products .container .product-items-wrapper {
