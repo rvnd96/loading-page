@@ -1,0 +1,126 @@
+.contact-banner {
+    padding: 120px 0;
+    padding-bottom: 90px;
+
+    @media only screen and (max-width: 549.9px) {
+        padding: 72px 0;
+    }
+
+    background: rgb(219, 245, 237);
+    background: linear-gradient(0deg, rgba(219, 245, 237, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        grid-gap: 40px;
+
+        @media screen and (max-width: 767.9px) {
+            flex-direction: column;
+            grid-gap: 32px;
+        }
+
+        .welcomeSection {
+            flex-basis: 60%;
+            font-family: @font-family;
+
+            h2 {
+                font-size: 28px;
+                color: @black;
+            }
+
+            h1 {
+                font-size: 42px;
+
+                span {
+                    color: @brand-main-text-color;
+                }
+
+                color: @brand-secondary-text-color;
+                margin-bottom: 12px;
+            }
+
+            p {
+                color: @black;
+            }
+        }
+
+        .contactSection {
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: row;
+            grid-gap: 12px;
+            flex-wrap: wrap;
+
+            p {
+                width: fit-content;
+                font-family: @font-family;
+                display: flex;
+                align-items: center;
+                grid-gap: 12px;
+
+                @media only screen and (max-width: 549.9px) {
+                    width: 100%;
+                }
+
+                a {
+                    font-size: 18px;
+                    padding: 16px 12px;
+                    text-decoration: none;
+                    color: white;
+                    background: #3C3C72;
+                    border-radius: 16px;
+                    transition: 0.3s ease;
+                    box-shadow: 1px 1px 3px #0000007d;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 10px;
+
+                    @media only screen and (max-width: 549.9px) {
+                        width: 100%;
+                        padding: 12px 8px;
+                    }
+
+                    &:hover {
+                        background: #232344;
+                    }
+                }
+
+                i {
+                    font-size: 28px;
+
+                    &.fa-whatsapp {
+                        color: #25d366;
+                    }
+
+                    &.fa-facebook {
+                        color: #1877F2;
+                    }
+                }
+            }
+
+            #serifFont {
+                font-family: @font-family;
+            }
+
+            #fb {
+                font-family: @font-family;
+
+                a {
+                    background: whitesmoke;
+                    box-shadow: 1px 1px 3px #0000007d;
+                    color: @black;
+                    text-align: center;
+
+                    @media only screen and (max-width: 549.9px) {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background: rgb(219, 245, 237);
+                    }
+                }
+            }
+        }
+    }
+}

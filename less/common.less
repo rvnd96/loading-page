@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+@font-family: 'Poppins', sans-serif;
+body {
+    font-family: @font-family;
+}
+
+.solution-container {
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+
+    @media only screen and (max-width: 1279.9px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media only screen and (max-width: 1023.9px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media only screen and (max-width: 767.9px) {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    @media only screen and (max-width: 549.9px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hiddenBtn {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.showBtn {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.btn:last-child {
+    transition-delay: 300ms;
+}
+
+#products {
+    .item-wrapper:nth-child(2) {
+        transition-delay: 100ms;
+    }
+    
+    .item-wrapper:nth-child(3) {
+        transition-delay: 200ms;
+    }
+    
+    .item-wrapper:nth-child(4) {
+        transition-delay: 300ms;
+    }
+    
+    .item-wrapper:nth-child(5) {
+        transition-delay: 400ms;
+    }
+    
+    .item-wrapper:nth-child(6) {
+        transition-delay: 500ms;
+    }
+}
+
+
+#projects {
+    .item-wrapper:nth-child(2) {
+        transition-delay: 200ms;
+    }
+    .item-wrapper:nth-child(3) {
+        transition-delay: 400ms;
+    }
+    .item-wrapper:nth-child(4) {
+        transition-delay: 600ms;
+    }
+}
+
+.footer {
+    .item:nth-child(2) {
+        transition-delay: 200ms;
+    }
+    .item:nth-child(3) {
+        transition-delay: 300ms;
+    }
+    .item:nth-child(4) {
+        transition-delay: 400ms;
+    }
+}

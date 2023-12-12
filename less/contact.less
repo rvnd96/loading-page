@@ -1,0 +1,39 @@
+.contact {
+    padding: 120px 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    
+    @media only screen and (max-width: 549.9px) {
+        padding: 72px 0;
+    }
+
+    background: rgb(219, 245, 237);
+    // background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(219, 245, 237, 1) 100%); 
+
+    .container {
+        .contact-main-title {
+
+            font-size: 44px;
+
+            @media only screen and (max-width: 549.9px) {
+                font-size: 32px;
+            }
+
+            font-family: @font-family;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        #contactForm {
+            font-family: @font-family;
+            width: 600px;
+
+            .form-control,
+            .btn-outline-warning {
+                border-radius: 10px;
+            }
+        }
+    }
+}
